@@ -1,0 +1,69 @@
+@use "./fonts" as *;
+@use "./mixins" as *;
+
+$primary-color: #323232;
+
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "NewAvenir";
+  margin: 0;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-header__title {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.primary-nav__links {
+  list-style: none;
+  font-weight: lighter;
+  @include mobile {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0 0 0;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+li {
+  margin: 0;
+  padding: 1rem 2rem;
+
+  @include tablet {
+    margin-left: 6rem;
+    padding: 1rem 0;
+  }
+}
+
+.page-header {
+  background-color: $primary-color;
+  color: #ffffff;
+
+  @include tablet {
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: baseline;
+  }
+
+  @include desktop{
+      padding-left: 7.5rem;
+  }
+}
+
+h1 {
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}

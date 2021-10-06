@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "NewAvenir";
+  src: url("../../Assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("../../Assets/Font/Alternative files/AvenirNextLTPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NewAvenir";
+  src: url("../../Assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("../../Assets/Font/Alternative files/AvenirNextLTPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "NewAvenir";
+  src: url("../../Assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("../../Assets/Font/Alternative files/AvenirNextLTPro-Demi.ttf") format("truetype");
+  font-weight: lighter;
+}
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "NewAvenir";
+  margin: 0;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-header__title {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.primary-nav__links {
+  list-style: none;
+  font-weight: lighter;
+}
+@media (min-width: 320px) {
+  .primary-nav__links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0 0 0;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+li {
+  margin: 0;
+  padding: 1rem 2rem;
+}
+@media (min-width: 768px) {
+  li {
+    margin-left: 6rem;
+    padding: 1rem 0;
+  }
+}
+
+.page-header {
+  background-color: #323232;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: baseline;
+  }
+}
+@media (min-width: 1280px) {
+  .page-header {
+    padding-left: 7.5rem;
+  }
+}
+
+@media (min-width: 320px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
+
+.biography {
+  border-bottom: solid white;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .biography {
+    padding-bottom: 2.5rem;
+  }
+}/*# sourceMappingURL=bio.css.map */

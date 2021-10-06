@@ -1,0 +1,18 @@
+@use '../styles/partials/fonts' as *;
+@use '../styles/partials/global' as *;
+@use '../styles/partials/mixins' as *;
+
+.biography{
+    border-bottom: solid white;
+    padding-bottom:1rem;
+
+    @include tablet{
+        padding-bottom:2.5rem;
+    }
+
+}
+
+
+
+
+

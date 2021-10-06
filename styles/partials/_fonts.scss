@@ -1,0 +1,23 @@
+//Default font
+
+@font-face {
+    font-family: 'NewAvenir';
+    src: url('../../Assets/Font/AvenirNextLTPro-Regular.otf') format('opentype');
+    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Regular.ttf') format('truetype');
+  }
+
+  //Bold version
+  @font-face {
+    font-family: 'NewAvenir';
+    src: url('../../Assets/Font/AvenirNextLTPro-Bold.otf') format('opentype');
+    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Bold.ttf') format('truetype');
+    font-weight:bold;
+}
+  
+  //light version
+  @font-face {
+    font-family: 'NewAvenir';
+    src: url('../../Assets/Font/AvenirNextLTPro-Demi.otf') format('opentype');
+    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Demi.ttf') format('truetype');
+    font-weight: lighter;
+}
