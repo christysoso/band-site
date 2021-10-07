@@ -16,30 +16,65 @@ body {
   font-size: 62.5%;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+// a {
+//   text-decoration: none;
+//   color: $grey-color;
+//   &:hover{
+//     border-bottom: solid white;
+//     color:white;
 
-.page-header__title {
-  margin: 0;
-  padding-top: 1rem;
+//   }
+
+// }
+
+
+.page-header__img{
+    display:flex;
+    justify-content:center;
+    padding: 1rem;
 }
 
 .primary-nav__links {
   list-style: none;
-  font-weight: lighter;
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem 0 0 0;
-    font-size: 1.5rem;
+    justify-content: center;
+    font-size: 1rem;
     margin: 0;
+    padding:0;
   
 }
 
+
 li {
   margin: 0;
-  padding: 1rem 2rem;
+  padding: 0 2rem .5rem 2rem;
+  width: 50%;
+  text-align: center;
+  color:$grey-color;
+
+  & a{
+    text-decoration: none;
+    color: $grey-color;
+&:hover{
+    color:white;
+}
+
+}
+
+  &:hover{
+    border-bottom: solid white;
+    color:white;
+
+  }
+
+  &:active{
+    border-bottom: solid white;
+    color:white;
+    font-weight:600;
+
+  }
+
+
 
   @include tablet {
     margin-left: 6rem;
@@ -71,16 +106,46 @@ h1 {
 
 h3{
     font-size: 1.6rem;
-    font-weight:normal;
+    font-weight:600;
     margin: 1.4rem 1rem 1rem 0;
 }
 
 p{
     font-size:0.9rem;
-    font-weight:normal;
+    
 }
 
 main{
-    //margin:1rem;
     color: $primary-color;
+}
+
+footer{
+    background-color:$primary-color;
+    color:white;
+    
+}
+.footer{
+    margin:0 1rem;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.footer__title{
+    color:white;
+}
+
+.footer__info--text{
+    margin:0;
+    font-size: 0.7rem;
+}
+
+.footer__info--container{
+    margin:1rem 0;
+}
+
+.footer__image{
+    margin: 3rem 0 1rem 0;
+}
+
+.Social{
+    margin-right: 2rem;
 }

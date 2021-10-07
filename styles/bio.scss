@@ -3,8 +3,16 @@
 @use '../styles/partials/mixins' as *;
 
 .biography{
-    border-bottom: solid white;
-    padding-bottom:1rem;
+
+
+   
+    color:white;
+    font-weight:600;
+
+    & a{
+        color:white;
+    }
+    
 
     @include tablet{
         padding-bottom:2.5rem;
@@ -33,7 +41,7 @@
     color:white;
     margin:0; 
     font-size: 1.5rem;
-    font-weight:normal;
+    font-weight:600;
     padding-left: 1rem;
       
 }
@@ -45,14 +53,27 @@
     
 }
 
-.Description__text{
-    font-weight:normal;
+.About>*{
+    font-weight: 600;
+}
+
+.Description__title{
+    font-size: 1rem;
+    font-weight:500;
+    color:black;
+    margin-bottom:0rem;
+    
     
 
 }
 
 .gallery{
     background-color: $secondary-color-wht;
+}
+
+.gallery__title{
+    margin: 0 0 0.3rem 1rem;
+    padding-top:1rem;
 }
 
 .information{
