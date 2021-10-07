@@ -2,22 +2,23 @@
 
 @font-face {
     font-family: 'NewAvenir';
-    src: url('../../Assets/Font/AvenirNextLTPro-Regular.otf') format('opentype');
-    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Regular.ttf') format('truetype');
+    src: url('../Assets/Font/AvenirNextLTPro-Regular.otf') format('opentype'),
+    url('../Assets/Font/Alternative-files/AvenirNextLTPro.ttf') format('truetype');
+    font-weight:normal;
   }
 
-  //Bold version
+  //Bolder version
   @font-face {
     font-family: 'NewAvenir';
-    src: url('../../Assets/Font/AvenirNextLTPro-Bold.otf') format('opentype');
-    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Bold.ttf') format('truetype');
-    font-weight:bold;
+    src: url('../Assets/Font/AvenirNextLTPro-Bold.otf') format('opentype'),
+    url('../Assets/Font/Alternative-files/AvenirNextLTProBold.ttf') format('truetype');
+    font-weight:bolder;
 }
   
-  //light version
+  //bold version
   @font-face {
     font-family: 'NewAvenir';
-    src: url('../../Assets/Font/AvenirNextLTPro-Demi.otf') format('opentype');
-    src: url('../../Assets/Font/Alternative\ files/AvenirNextLTPro-Demi.ttf') format('truetype');
-    font-weight: lighter;
+    src: url('../Assets/Font/AvenirNextLTPro-Demi.otf') format('opentype'),
+    url('../Assets/Font/Alternative-files/AvenirNextLTProDemi.ttf') format('truetype');
+    font-weight: bold;
 }

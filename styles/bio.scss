@@ -12,7 +12,64 @@
 
 }
 
+.banner{
+    background-image: url('../Assets/Images/hero-bio.jpg');
+    background-size: cover;
+  background-position: center;
+  min-height: 12rem;
+  max-height: 12rem;
+  
+}
 
+.banner__container{
+    background-color:rgba(0,0,0,.5);
+    min-height: 12rem;
+  max-height: 12rem;
+  display:flex;
+  align-items:center;
+}
+
+.banner__title{
+    color:white;
+    margin:0; 
+    font-size: 1.5rem;
+    font-weight:normal;
+    padding-left: 1rem;
+      
+}
+
+
+.About__image{
+    height:auto;
+    width:18rem;
+    
+}
+
+.Description__text{
+    font-weight:normal;
+    
+
+}
+
+.gallery{
+    background-color: $secondary-color-wht;
+}
+
+.information{
+    margin:1rem;
+}
+
+.gallery__img{
+    height:auto;
+    width:18rem;
+    margin: .5rem 0;
+}
+
+.gallery__img-container{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
 
 
 
