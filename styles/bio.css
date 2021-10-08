@@ -23,12 +23,6 @@ body {
   font-size: 62.5%;
 }
 
-.page-header__img {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
 .primary-nav__links {
   list-style: none;
   display: flex;
@@ -37,52 +31,38 @@ body {
   margin: 0;
   padding: 0;
 }
-
-li {
+.primary-nav__link {
   margin: 0;
   padding: 0 2rem 0.5rem 2rem;
   width: 50%;
   text-align: center;
-  color: #AFAFAF;
+  color: #afafaf;
 }
-li a {
-  text-decoration: none;
-  color: #AFAFAF;
-}
-li a:hover {
-  color: white;
-}
-li:hover {
+.primary-nav__link:hover {
   border-bottom: solid white;
   color: white;
 }
-li:active {
+.primary-nav__link:active {
   border-bottom: solid white;
   color: white;
   font-weight: 600;
 }
-@media (min-width: 768px) {
-  li {
-    margin-left: 6rem;
-    padding: 1rem 0;
-  }
+.primary-nav a {
+  text-decoration: none;
+  color: #afafaf;
+}
+.primary-nav a:hover {
+  color: white;
 }
 
 .page-header {
   background-color: #323232;
   color: #ffffff;
 }
-@media (min-width: 768px) {
-  .page-header {
-    display: flex;
-    padding: 0rem 1rem;
-    align-items: baseline;
-  }
-}
-@media (min-width: 1280px) {
-  .page-header {
-    padding-left: 7.5rem;
-  }
+.page-header__img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -105,35 +85,26 @@ main {
   color: #323232;
 }
 
-footer {
+.footer {
   background-color: #323232;
   color: white;
+  padding: 1rem 1rem;
 }
-
-.footer {
-  margin: 0 1rem;
-  padding: 0.5rem 0 1rem 0;
-}
-
 .footer__title {
-  color: white;
+  margin-top: 0;
 }
-
+.footer.Social {
+  margin-right: 2rem;
+}
+.footer__info--container {
+  margin: 1rem 0;
+}
 .footer__info--text {
   margin: 0;
   font-size: 0.7rem;
 }
-
-.footer__info--container {
-  margin: 1rem 0;
-}
-
 .footer__image {
   margin: 3rem 0 1rem 0;
-}
-
-.Social {
-  margin-right: 2rem;
 }
 
 .biography {
@@ -156,7 +127,6 @@ footer {
   min-height: 12rem;
   max-height: 12rem;
 }
-
 .banner__container {
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 12rem;
@@ -164,22 +134,12 @@ footer {
   display: flex;
   align-items: center;
 }
-
 .banner__title {
   color: white;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
   padding-left: 1rem;
-}
-
-.About__image {
-  height: auto;
-  width: 18rem;
-}
-
-.About > * {
-  font-weight: 600;
 }
 
 .Description__title {
@@ -190,26 +150,30 @@ footer {
 }
 
 .gallery {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
-
 .gallery__title {
   margin: 0 0 0.3rem 1rem;
   padding-top: 1rem;
 }
-
-.information {
-  margin: 1rem;
+.gallery__img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
 .gallery__img {
   height: auto;
   width: 18rem;
   margin: 0.5rem 0;
 }
 
-.gallery__img-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.About {
+  margin: 1rem;
+}
+.About__container {
+  font-weight: 600;
+}
+.About__image {
+  height: auto;
+  width: 18rem;
 }/*# sourceMappingURL=bio.css.map */

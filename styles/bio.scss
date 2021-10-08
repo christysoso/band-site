@@ -4,8 +4,6 @@
 
 .biography{
 
-
-   
     color:white;
     font-weight:600;
 
@@ -26,36 +24,54 @@
   background-position: center;
   min-height: 12rem;
   max-height: 12rem;
-  
-}
 
-.banner__container{
+  &__container{
     background-color:rgba(0,0,0,.5);
     min-height: 12rem;
   max-height: 12rem;
   display:flex;
   align-items:center;
-}
 
-.banner__title{
+  }
+
+  &__title{
     color:white;
     margin:0; 
     font-size: 1.5rem;
     font-weight:600;
     padding-left: 1rem;
+
+  }
+  
+}
+
+// .banner__container{
+//     background-color:rgba(0,0,0,.5);
+//     min-height: 12rem;
+//   max-height: 12rem;
+//   display:flex;
+//   align-items:center;
+// }
+
+// .banner__title{
+//     color:white;
+//     margin:0; 
+//     font-size: 1.5rem;
+//     font-weight:600;
+//     padding-left: 1rem;
       
-}
+// }
 
 
-.About__image{
-    height:auto;
-    width:18rem;
+// .About__image{
+//     height:auto;
+//     width:18rem;
     
-}
+// }
 
-.About>*{
-    font-weight: 600;
-}
+// .About__container>*{
+//     font-weight: 600;
+// }
 
 .Description__title{
     font-size: 1rem;
@@ -64,33 +80,65 @@
     margin-bottom:0rem;
     
     
-
 }
 
 .gallery{
     background-color: $secondary-color-wht;
-}
 
-.gallery__title{
-    margin: 0 0 0.3rem 1rem;
-    padding-top:1rem;
-}
+    &__title{
+        margin: 0 0 0.3rem 1rem;
+        padding-top:1rem;
 
-.information{
-    margin:1rem;
-}
+    }
 
-.gallery__img{
-    height:auto;
-    width:18rem;
-    margin: .5rem 0;
-}
-
-.gallery__img-container{
-    display:flex;
+    &__img-container{
+        display:flex;
     align-items:center;
     flex-direction:column;
+
+    }
+
+    &__img{
+        height:auto;
+        width:18rem;
+    margin: .5rem 0;
+ }
+
+    }
+
+
+// .gallery__title{
+//     margin: 0 0 0.3rem 1rem;
+//     padding-top:1rem;
+// }
+
+.About{
+    margin:1rem;
+
+    &__container{
+        font-weight: 600;
+   
+    }
+
+    &__image{
+        height:auto;
+        width:18rem;
+    }
+
+    
 }
+
+// .gallery__img{
+//     height:auto;
+//     width:18rem;
+//     margin: .5rem 0;
+// }
+
+// .gallery__img-container{
+//     display:flex;
+//     align-items:center;
+//     flex-direction:column;
+// }
 
 
 
