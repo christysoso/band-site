@@ -1,144 +1,160 @@
-@use '../styles/partials/fonts' as *;
-@use '../styles/partials/global' as *;
-@use '../styles/partials/mixins' as *;
+@use "../styles/partials/fonts" as *;
+@use "../styles/partials/global" as *;
+@use "../styles/partials/mixins" as *;
 
-.biography{
+.biography {
+  color: white;
+  font-weight: 600;
+  border-bottom: solid white;
 
-    color:white;
-    font-weight:600;
+  & a {
+    color: white;
+  }
 
-    & a{
-        color:white;
-    }
-    
-
-    @include tablet{
-        padding-bottom:2.5rem;
-    }
-
+//   @include tablet {
+//     padding-bottom: 2.5rem;
+//   }
 }
 
-.banner{
-    background-image: url('../Assets/Images/hero-bio.jpg');
-    background-size: cover;
+.banner {
+  background-image: url("../Assets/Images/hero-bio.jpg");
+  background-size: cover;
   background-position: center;
   min-height: 12rem;
   max-height: 12rem;
+  @include tablet{
+      min-height:32rem;
+      max-height:32rem;
+  }
 
-  &__container{
-    background-color:rgba(0,0,0,.5);
+  &__container {
+    background-color: rgba(0, 0, 0, 0.5);
     min-height: 12rem;
-  max-height: 12rem;
-  display:flex;
-  align-items:center;
-
+    max-height: 12rem;
+    display: flex;
+    align-items: center;
+    @include tablet{
+        min-height:32rem;
+        max-height:32rem;
+        
   }
+    }
 
-  &__title{
-    color:white;
-    margin:0; 
+
+  &__title {
+    color: white;
+    margin: 0;
     font-size: 1.5rem;
-    font-weight:600;
+    font-weight: 600;
     padding-left: 1rem;
-
-  }
+    @include tablet{
+        font-size:3.8rem;
+        padding-left:3rem;
+    }
+    }
   
 }
 
-// .banner__container{
-//     background-color:rgba(0,0,0,.5);
-//     min-height: 12rem;
-//   max-height: 12rem;
-//   display:flex;
-//   align-items:center;
-// }
+.Description{
+    @include tablet{
+        margin:3rem 5rem;
 
-// .banner__title{
-//     color:white;
-//     margin:0; 
-//     font-size: 1.5rem;
-//     font-weight:600;
-//     padding-left: 1rem;
-      
-// }
-
-
-// .About__image{
-//     height:auto;
-//     width:18rem;
-    
-// }
-
-// .About__container>*{
-//     font-weight: 600;
-// }
-
-.Description__title{
-    font-size: 1rem;
-    font-weight:500;
-    color:black;
-    margin-bottom:0rem;
-    
-    
-}
-
-.gallery{
-    background-color: $secondary-color-wht;
-
-    &__title{
-        margin: 0 0 0.3rem 1rem;
-        padding-top:1rem;
-
+        }   
+.Description__title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0rem;
+  @include tablet{
+      font-size: 1.5rem;
+      font-weight:600;
+        }
     }
 
-    &__img-container{
-        display:flex;
-    align-items:center;
-    flex-direction:column;
-
+    &__text{
+        @include tablet{
+            margin: 1rem 1rem 1rem 0;
+        }
     }
-
-    &__img{
-        height:auto;
-        width:18rem;
-    margin: .5rem 0;
- }
-
-    }
-
-
-// .gallery__title{
-//     margin: 0 0 0.3rem 1rem;
-//     padding-top:1rem;
-// }
-
-.About{
-    margin:1rem;
 
     &__container{
-        font-weight: 600;
-   
+        @include tablet{
+        display:flex;
+    }
     }
 
-    &__image{
-        height:auto;
-        width:18rem;
-    }
 
-    
 }
 
-// .gallery__img{
-//     height:auto;
-//     width:18rem;
-//     margin: .5rem 0;
-// }
+.gallery {
+  background-color: $secondary-color-wht;
+  @include tablet{
+  padding:2rem;
+}
 
-// .gallery__img-container{
-//     display:flex;
-//     align-items:center;
-//     flex-direction:column;
-// }
+  &__title {
+    margin: 0 0 0.3rem 1rem;
+    padding-top: 1rem;
+    @include tablet{
+        padding-bottom:1rem;
+    }
+
+  }
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include tablet{
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center;
+        
+    }
+  }
+
+  &__img {
+    height: auto;
+    width: 18rem;
+    margin: 0.5rem 0;
+    @include tablet{
+        width: 30%;
+       margin: 0.6rem;
+
+    }
+  }
+}
+
+.About {
+  margin: 1rem;
+
+  &__container {
+    font-weight: 600;
+  }
+
+  &__description{
+      @include tablet{
+          margin:1rem 5rem;
+      }
+  }
 
 
+  &__image {
+    height: auto;
+    width: 18rem;
+    @include tablet{
+        margin-top:1rem;
+        width:35rem;
+        height:20rem;
+       
+    }
+  }
 
+  &__quote{
+      font-size:1.4rem;
+  }
+
+  &__quote--cite{
+      font-size: 1rem;
+  }
+}
