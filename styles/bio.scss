@@ -26,6 +26,7 @@
       min-height:32rem;
       max-height:32rem;
   }
+  
 
   &__container {
     background-color: rgba(0, 0, 0, 0.5);
@@ -38,6 +39,7 @@
         max-height:32rem;
         
   }
+  
     }
 
 
@@ -50,6 +52,9 @@
     @include tablet{
         font-size:3.8rem;
         padding-left:3rem;
+    }
+    @include desktop{
+        padding-left:10rem;
     }
     }
   
@@ -89,7 +94,10 @@
 .gallery {
   background-color: $secondary-color-wht;
   @include tablet{
-  padding:2rem;
+  padding:1rem;
+}
+@include desktop{
+    padding: 2rem 5rem 0.5rem 6rem;
 }
 
   &__title {
@@ -98,6 +106,9 @@
     @include tablet{
         padding-bottom:1rem;
     }
+    @include desktop{
+        margin: 0 0 0.3rem 2rem;
+    }
 
   }
 
@@ -105,6 +116,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom:1rem;
     @include tablet{
         flex-direction:row;
         flex-wrap: wrap;
@@ -127,6 +139,9 @@
 
 .About {
   margin: 1rem;
+  @include desktop{
+      margin: 1rem 8rem;
+  }
 
   &__container {
     font-weight: 600;
@@ -147,6 +162,11 @@
         width:35rem;
         height:20rem;
        
+    }
+
+    @include desktop{
+        width:55rem;
+        height:30rem;
     }
   }
 

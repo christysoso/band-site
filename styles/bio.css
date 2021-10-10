@@ -100,6 +100,12 @@ main {
     padding-top: 0.5rem;
   }
 }
+@media (min-width: 1280px) {
+  .page-header {
+    padding-left: 7rem;
+    padding-top: 1rem;
+  }
+}
 .page-header__img {
   display: flex;
   justify-content: center;
@@ -109,11 +115,22 @@ main {
 .footer {
   background-color: #323232;
   color: white;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
 }
-.footer__title {
-  margin-top: 0;
-  margin-right: 2rem;
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding-left: 6rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer__title {
+    margin: 0 2rem 0 2rem;
+  }
 }
 @media (min-width: 768px) {
   .footer__header {
@@ -125,14 +142,30 @@ main {
   .footer__container {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 1rem 0 1rem;
+    margin: 2rem 1rem 0 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__container {
+    justify-content: flex-start;
   }
 }
 .footer .Social {
   margin-right: 2rem;
 }
+@media (min-width: 768px) {
+  .footer .Social {
+    height: 2rem;
+    width: 2rem;
+  }
+}
 .footer__info--container {
   margin: 1rem 0;
+}
+@media (min-width: 1280px) {
+  .footer__info--container {
+    margin-right: 4rem;
+  }
 }
 .footer__info--text {
   margin: 0;
@@ -149,10 +182,24 @@ main {
 @media (min-width: 768px) {
   .footer__image {
     margin: 0;
+    position: relative;
+    bottom: 14rem;
+    left: 35rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__image {
+    left: 59.5rem;
   }
 }
 .footer p {
   color: #fafafa;
+}
+@media (min-width: 768px) {
+  .footer .copyright {
+    margin-left: 2rem;
+  }
 }
 
 .biography {
@@ -203,6 +250,11 @@ main {
     padding-left: 3rem;
   }
 }
+@media (min-width: 1280px) {
+  .banner__title {
+    padding-left: 10rem;
+  }
+}
 
 @media (min-width: 768px) {
   .Description {
@@ -237,7 +289,12 @@ main {
 }
 @media (min-width: 768px) {
   .gallery {
-    padding: 2rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 2rem 5rem 0.5rem 6rem;
   }
 }
 .gallery__title {
@@ -249,10 +306,16 @@ main {
     padding-bottom: 1rem;
   }
 }
+@media (min-width: 1280px) {
+  .gallery__title {
+    margin: 0 0 0.3rem 2rem;
+  }
+}
 .gallery__img-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .gallery__img-container {
@@ -276,6 +339,11 @@ main {
 .About {
   margin: 1rem;
 }
+@media (min-width: 1280px) {
+  .About {
+    margin: 1rem 8rem;
+  }
+}
 .About__container {
   font-weight: 600;
 }
@@ -293,6 +361,12 @@ main {
     margin-top: 1rem;
     width: 35rem;
     height: 20rem;
+  }
+}
+@media (min-width: 1280px) {
+  .About__image {
+    width: 55rem;
+    height: 30rem;
   }
 }
 .About__quote {
