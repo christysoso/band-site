@@ -76,18 +76,12 @@ main {
     }
   }
   & a {
-    text-decoration: none;
     color: $grey-color;
     &:hover {
       color: white;
     }
   }
 }
-
-//   @include tablet {
-//     margin-left: 6rem;
-//     padding: 1rem 0;
-//   }
 
 .page-header {
   background-color: $primary-color;
@@ -111,27 +105,21 @@ main {
   }
 }
 
-//   @include tablet {
-//     display: flex;
-//     padding: 0rem 1rem;
-//     align-items: baseline;
-//   }
-
 .footer {
   background-color: $primary-color;
   color: white;
   padding: 0.5rem 1rem;
-  @include tablet{
-      padding: 3rem 1rem;
+  @include tablet {
+    padding: 3rem 1rem;
   }
-  @include desktop{
-      padding-left:6rem;
+  @include desktop {
+    padding-left: 6rem;
   }
 
   &__title {
-      @include tablet{
-    margin: 0 2rem 0 2rem;
-}
+    @include tablet {
+      margin: 0 2rem 0 2rem;
+    }
   }
 
   &__header {
@@ -148,23 +136,23 @@ main {
       margin: 2rem 1rem 0 2rem;
     }
 
-    @include desktop{
-        justify-content:flex-start;
+    @include desktop {
+      justify-content: flex-start;
     }
   }
 
   & .Social {
     margin-right: 2rem;
-    @include tablet{
-        height:2rem;
-        width:2rem;
+    @include tablet {
+      height: 2rem;
+      width: 2rem;
     }
   }
 
   &__info--container {
     margin: 1rem 0;
-    @include desktop{
-        margin-right: 4rem;
+    @include desktop {
+      margin-right: 4rem;
     }
   }
 
@@ -180,13 +168,13 @@ main {
     margin: 3rem 0 1rem 0;
     @include tablet {
       margin: 0;
-      position:relative;
+      position: relative;
       bottom: 14rem;
-        left:35rem;
-        height:1.5rem;
+      left: 35rem;
+      height: 1.5rem;
     }
-    @include desktop{
-        left: 59.5rem;
+    @include desktop {
+      left: 59.5rem;
     }
   }
 
@@ -194,9 +182,13 @@ main {
     color: $secondary-color-wht;
   }
 
-  & .copyright{
-      @include tablet{
-      margin-left:2rem;
+  & .copyright {
+    @include tablet {
+      margin-left: 2rem;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
