@@ -1,0 +1,94 @@
+@use "../styles/partials/fonts" as *;
+@use "../styles/partials/global" as *;
+@use "../styles/partials/mixins" as *;
+
+.shows {
+    color: white;
+    font-weight: 600;
+    border-bottom: solid white;
+  
+    & a {
+      color: white;
+    }
+  }
+
+
+.show-info{
+ 
+    padding: 1rem 0;
+    @include tablet{
+        margin:1rem;
+    }
+
+    &__title{
+        margin: 1rem 1rem 0 1rem;
+        
+
+    }
+
+    &__container{
+        border-bottom: solid 0.1rem $secondary-color-gry;
+        padding:1rem;
+        @include tablet{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-end;
+            
+        }
+
+    }
+
+    &__container--title{
+        color:$grey-color;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform:uppercase;
+        margin: 1rem 0 0.5rem 0;
+        @include tablet{
+            margin-bottom: 2.5rem;
+
+        }
+    
+
+    }
+
+    &__container--info{
+        margin-top:0;
+
+        @include tablet{
+            margin-top:1rem;
+        }
+        
+        
+
+    }
+
+    &__btn{
+        color:white;
+        background-color:$primary-color;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius: .4rem;
+        height:3rem;
+        font-size:1.2rem;
+        font-weight:600;
+        cursor:pointer;
+
+        @include tablet{
+            width:12rem;
+        }
+        
+
+    }
+
+    & .date{
+        font-weight:600;
+    }
+
+    & .hide-title{
+        @include tablet{
+           display:none;
+        }
+    }
+}
