@@ -206,7 +206,17 @@ a {
   text-decoration: none;
 }
 
+.biography {
+  color: white;
+  font-weight: 600;
+  border-bottom: solid white;
+}
+.biography a {
+  color: white;
+}
+
 .banner {
+  background-image: url("../Assets/Images/hero-bio.jpg");
   background-size: cover;
   background-position: center;
   min-height: 12rem;
@@ -217,18 +227,6 @@ a {
     min-height: 32rem;
     max-height: 32rem;
   }
-}
-@media (min-width: 1280px) {
-  .banner {
-    min-height: 50rem;
-    max-height: 50rem;
-  }
-}
-.banner.bio-header-image {
-  background-image: url("../../Assets/Images/hero-bio.jpg");
-}
-.banner.shows-header-image {
-  background-image: url("../../Assets/Images/hero-shows.jpg");
 }
 .banner__container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -260,15 +258,6 @@ a {
   .banner__title {
     padding-left: 10rem;
   }
-}
-
-.biography {
-  color: white;
-  font-weight: 600;
-  border-bottom: solid white;
-}
-.biography a {
-  color: white;
 }
 
 @media (min-width: 768px) {

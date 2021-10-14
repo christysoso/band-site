@@ -3,112 +3,209 @@
 @use "../styles/partials/mixins" as *;
 
 .shows {
+  color: white;
+  font-weight: 600;
+  border-bottom: solid white;
+
+  & a {
     color: white;
-    font-weight: 600;
-    border-bottom: solid white;
-  
-    & a {
-      color: white;
+  }
+}
+
+.show-info {
+  padding: 1rem 0;
+  @include tablet {
+    margin: 1rem 2rem;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__title {
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  &__container {
+    border-bottom: solid 0.1rem $secondary-color-gry;
+    padding: 1rem;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
     }
   }
 
-
-.show-info{
- 
-    padding: 1rem 0;
-    @include tablet{
-        margin: 1rem 2rem;
+  &__container--title {
+    color: $grey-color;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0 0.5rem 0;
+    @include tablet {
+      margin-bottom: 2.5rem;
     }
-    @include desktop{
-        display:flex;
-        justify-content:space-around;
+  }
+
+  &__container--info {
+    margin-top: 0;
+    width: 8rem;
+
+    @include tablet {
+      margin-top: 1rem;
     }
+  }
 
-    &__title{
-        margin: 1rem 1rem 0 1rem;
-        
-
+  &__wrapper {
+    @include desktop {
+      margin-left: 2rem;
+      width: 65%;
     }
+  }
 
-    &__container{
-        border-bottom: solid 0.1rem $secondary-color-gry;
-        padding:1rem;
-        @include tablet{
-            display:flex;
-            justify-content:space-between;
-            align-items:flex-end;
-            
-        }
+  &__btn {
+    color: white;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
 
+    @include tablet {
+      width: 12rem;
     }
+  }
 
-    &__container--title{
-        color:$grey-color;
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform:uppercase;
-        margin: 1rem 0 0.5rem 0;
-        @include tablet{
-            margin-bottom: 2.5rem;
+  & .date {
+    font-weight: 600;
+    width: 8rem;
+  }
 
-        }
-    
-
+  & .show-header {
+    @include mobile {
+      display: none;
     }
+    border: none;
+  }
 
-    &__container--info{
-        margin-top:0;
-        width: 8rem;
-
-        @include tablet{
-            margin-top:1rem;
-        }
-        
-        
-
-    }
-
-    &__wrapper{
-        @include desktop{
-            margin-left: 2rem;
-            width:65%;
-        }
+  & .special {
+    @include mobile {
+      display: none;
     }
 
-    &__btn{
-        color:white;
-        background-color:$primary-color;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius: .4rem;
-        height:3rem;
-        font-size:1.2rem;
-        font-weight:600;
-        cursor:pointer;
+    width: 8rem;
+    margin: 0;
+  }
 
-        @include tablet{
-            width:12rem;
-        }
-        
-
+  & .hide-title {
+    @include tablet {
+      display: none;
     }
+  }
 
-    & .date{
-        font-weight:600;
-        width: 8rem;
-    }
-
-    & .hide-title{
-        @include tablet{
-           display:none;
-        }
-    }
+  & .hide-btn {
+    visibility: hidden;
+  }
 }
 
-.show-hover{
-    &:hover{
-        background-color: $secondary-color-wht;
+.show-hover {
+  &:hover {
+    background-color: $secondary-color-wht;
+  }
+}
+
+.banner {
+  background-image: url("../../Assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 15rem;
+  max-height: 15rem;
+  color: white;
+  @include tablet {
+    min-height: 30rem;
+    max-height: 30rem;
+  }
+
+  @include desktop {
+    min-height: 35rem;
+    max-height: 35rem;
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 15rem;
+    max-height: 15rem;
+    @include tablet {
+      min-height: 30rem;
+      max-height: 30rem;
     }
-    
+    @include desktop {
+      min-height: 35rem;
+      max-height: 35rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__container--left {
+    max-width: 80%;
+    margin: 0 1rem;
+    @include tablet {
+      margin: 0 2rem;
+    }
+    @include desktop {
+      max-width: 38%;
+    }
+  }
+
+  &__album-name {
+    margin: 0;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.6rem;
+      padding-top: 3.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: 3.6rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__container--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include tablet {
+      align-items: flex-start;
+      margin: 2.5rem;
+    }
+    @include desktop {
+      margin-top: 5rem;
+    }
+  }
+
+  &__music {
+    max-height: 4rem;
+    max-width: 18rem;
+
+    @include tablet {
+      max-height: 8.5rem;
+      max-width: 25rem;
+    }
+
+    @include desktop {
+      width: 30rem;
+    }
+  }
 }
