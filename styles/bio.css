@@ -378,4 +378,35 @@ a {
 }
 .About__quote--cite {
   font-size: 1rem;
+}
+
+.comments {
+  margin: 1rem;
+}
+.comments__container {
+  display: flex;
+  border-bottom: solid 0.1rem #e1e1e1;
+  margin-top: 1rem;
+}
+.comments__container--pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.comments__container--name {
+  margin: 0;
+  font-weight: 600;
+}
+.comments__container--date {
+  margin: 0;
+  font-weight: 400;
+  color: #afafaf;
+}
+.comments__container--right {
+  margin-left: 1rem;
+}
+.comments__container--header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=bio.css.map */

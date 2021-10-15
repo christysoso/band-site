@@ -161,3 +161,59 @@
     font-size: 1rem;
   }
 }
+
+
+.comments{
+  margin:1rem;
+
+  &__header{
+
+  }
+
+  &__container{
+    display:flex;
+    border-bottom: solid 0.1rem $secondary-color-gry;
+    margin-top:1rem;
+
+  }
+
+  &__container--left{
+
+  }
+
+  &__container--pic{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+  }
+
+  &__container--name{
+    margin:0;
+    font-weight:600;
+  }
+
+  &__container--date{
+    margin:0;
+    font-weight: 400;
+    color: $grey-color;
+  }
+
+  &__container--right{
+    margin-left: 1rem;
+
+  }
+  &__container--header{
+    display:flex;
+    justify-content:space-between;
+    font-size: 0.8rem;
+
+  }
+
+  &__container--date{
+
+  }
+
+  &__container--comment{
+
+  }
+}
