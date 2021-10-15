@@ -33,6 +33,7 @@
       min-height: 32rem;
       max-height: 32rem;
     }
+
   }
 
   &__title {
@@ -165,12 +166,31 @@
 
 .comments{
   margin:1rem;
+  @include desktop{
+    margin-bottom:3rem;
+  }
 
   &__container{
     display:flex;
     border-bottom: solid 0.1rem $secondary-color-gry;
     margin-top:1rem;
+    @include tablet{
+      margin: 1rem 4rem 2rem 4rem;
+    }
+    @include desktop{
+      margin: 1rem 18rem;
+    }
 
+  }
+
+  &__header{
+    @include tablet{
+    margin-left:2rem;
+  }
+
+  @include desktop{
+    margin-left:6rem;
+  }
   }
 
   &__container--pic{
@@ -204,7 +224,7 @@
 
   &__container--text{
     max-width: 100%;
-    min-height:8rem;
+    min-height:5rem;
     resize:none;
   }
 
@@ -228,12 +248,17 @@
 
     @include tablet {
       width: 12rem;
+      
     }
   }
 
   &__container--btncontainer{
     display: flex;
     flex-direction: column;
+
+    @include tablet{
+      align-items:flex-end;
+    }
     
 }
   & .comments-section{
@@ -255,6 +280,7 @@
     border: solid 0.1rem $secondary-color-gry;
     border-radius:0.4rem;
   }
+
 
   &__container--username{
     padding:0.5rem;
