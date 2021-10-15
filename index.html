@@ -21,7 +21,9 @@
       <nav class="primary-nav">
         <ul class="primary-nav__links">
           <li class="primary-nav__link biography"><a href="#">Biography</a></li>
-          <li class="primary-nav__link"><a href="./pages/shows.html">Shows</a></li>
+          <li class="primary-nav__link">
+            <a href="./pages/shows.html">Shows</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -137,45 +139,61 @@
       <section class="comments">
         <h3 class="comments__header">Join the Conversation</h3>
 
-          <!-- <article class="comments__container">
-            <div class="comments__container--left">
-            <img class="comments__container--pic" src="Assets/Images/Mohan-muruge.jpg" alt="profile-pic"/>
-            
+        <article class="comments__container">
+          <div class="comments__container--left">
+            <img
+              class="comments__container--pic"
+              src="Assets/Images/Mohan-muruge.jpg"
+              alt="profile-pic"
+            />
           </div>
-          <div class="comments__container--right">
-            <div class="comments__container--header">
-            <h4 class="comments__container--name">Connor Walton</h4>
-            <h4 class="comments__container--date">02/17/2021</h4>
-            </div>
-            <p class="commenst__container--comment">This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.</p>
+
+          <div class="comments__container--right comments-section">
+            <form id="main-form" class="comments__container--forms">
+              <div class="comments__container--form">
+                <label class="comments__container--label name-label" for="name"
+                  >Name</label
+                >
+                <input
+                  class="comments__container--username username"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="comments__container--form">
+                <label class="comments__container--label" for="message"
+                  >Comment</label
+                >
+                <textarea
+                  class="comments__container--text"
+                  name= "message"
+                  id="message"
+                  placeholder="Add new comment"
+                ></textarea>
+              </div>
+              <div class="comments__container--btncontainer">
+                <button class="comments__container--btn submit" type="submit" form="main-form">
+                  COMMENT
+                </button>
+              </div>
+            </form>
           </div>
-          </article> -->
+        </article>
+
+        <div class="comments__all-container">
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+        </div>
 
       </section>
 
-
-
-
-
-
-
-
-     <!-- footer -->
+      <!-- footer -->
 
       <footer>
         <section class="footer">

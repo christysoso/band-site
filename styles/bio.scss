@@ -166,18 +166,10 @@
 .comments{
   margin:1rem;
 
-  &__header{
-
-  }
-
   &__container{
     display:flex;
     border-bottom: solid 0.1rem $secondary-color-gry;
     margin-top:1rem;
-
-  }
-
-  &__container--left{
 
   }
 
@@ -200,6 +192,7 @@
 
   &__container--right{
     margin-left: 1rem;
+    width:100%;
 
   }
   &__container--header{
@@ -209,11 +202,71 @@
 
   }
 
-  &__container--date{
-
+  &__container--text{
+    max-width: 100%;
+    min-height:8rem;
+    resize:none;
   }
 
-  &__container--comment{
-
+  &__container--form{
+    display:flex;
+    flex-direction:column;
   }
+
+  &__container--btn{
+    color: white;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin:1rem 0;
+
+    @include tablet {
+      width: 12rem;
+    }
+  }
+
+  &__container--btncontainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+  & .comments-section{
+    width:100%;
+  }
+
+  &__container--label{
+    font-size:0.7rem;
+    color:$grey-color;
+    text-transform:uppercase;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  &__container--text{
+    font-family: 'NewAvenir';
+    padding: 0.5rem;
+    background-color:$secondary-color-wht;
+    border: solid 0.1rem $secondary-color-gry;
+    border-radius:0.4rem;
+  }
+
+  &__container--username{
+    padding:0.5rem;
+    font-family: 'NewAvenir';
+    background-color:$secondary-color-wht;
+    border: solid 0.1rem $secondary-color-gry;
+    border-radius:0.4rem;
+  }
+
+  & .name-label{
+    margin-top:0rem;
+  }
+
+
 }

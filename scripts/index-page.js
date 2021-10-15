@@ -1,4 +1,4 @@
-console.log("oh...no our table...is broken");
+
 
 const newComments = [
   {
@@ -23,11 +23,13 @@ const newComments = [
   },
 ];
 
-const commentsElem = document.querySelector(".comments");
+const commentsElem = document.querySelector(".comments__all-container");
 // console.log(commentsElem);
 
-function addComments() {
+function displayComments() {
+  commentsElem.innerHTML="";
   for (let i = 0; i < newComments.length; i++) {
+    
       //create comments container
       const commentsContainer = document.createElement('article');
       commentsContainer.classList.add('comments__container');
@@ -82,4 +84,33 @@ function addComments() {
   }
 }
 
-addComments();
+displayComments();
+
+
+const form = document.getElementById('main-form');
+
+
+form.addEventListener("submit", function(event){ 
+    event.preventDefault();
+    console.log('form submitted');
+    console.log(event.target.name.value);
+    console.log(event.target.message.value);
+    
+
+
+    const addNewComment= {
+      name: event.target.name.value,
+      comments: event.target.message.value,
+      date: new Date(Date.now()).toLocaleDateString(),
+    }
+
+    newComments.unshift(addNewComment);
+    
+    form.reset();
+
+    displayComments();
+
+});
+
+
+
