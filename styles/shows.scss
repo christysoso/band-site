@@ -64,16 +64,18 @@
   }
 
   &__btn {
-    color: white;
-    background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.4rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
+    // color: white;
+    // background-color: $primary-color;
+    // // display: flex;
+    // // justify-content: center;
+    @include centering;
+    // align-items: center;
+    // border-radius: 0.4rem;
+    // height: 3rem;
+    // font-size: 1.2rem;
+    // font-weight: 600;
+    // cursor: pointer;
+    @include btnStyle;
 
     @include tablet {
       width: 12rem;
@@ -182,8 +184,9 @@
   }
 
   &__container--right {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include centering;
     align-items: center;
     flex-direction: column;
     @include tablet {

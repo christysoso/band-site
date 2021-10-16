@@ -1,5 +1,3 @@
-
-
 const newComments = [
   {
     name: "Connor Walton",
@@ -27,90 +25,78 @@ const commentsElem = document.querySelector(".comments__all-container");
 // console.log(commentsElem);
 
 function displayComments() {
-  commentsElem.innerHTML="";
+  commentsElem.innerHTML = "";
   for (let i = 0; i < newComments.length; i++) {
-    
-      //create comments container
-      const commentsContainer = document.createElement('article');
-      commentsContainer.classList.add('comments__container');
+    //create comments container
+    const commentsContainer = document.createElement("article");
+    commentsContainer.classList.add("comments__container");
 
-        //create comments container left
-        const containerLeft = document.createElement('div');
-        containerLeft.classList.add('comment__container--left');
+    //create comments container left
+    const containerLeft = document.createElement("div");
+    containerLeft.classList.add("comment__container--left");
 
-        //create image connect to left container
-        const containerImg = document.createElement('img');
-        containerImg.classList.add('comments__container--pic');
-        containerImg.setAttribute('src','./Assets/Images/Mohan-muruge.jpg');
-        containerImg.setAttribute('alt', 'profile-pic');
+    //create image connect to left container
+    const containerImg = document.createElement("img");
+    containerImg.classList.add("comments__container--pic");
+    containerImg.setAttribute("src", "./Assets/Images/Mohan-muruge.jpg");
+    containerImg.setAttribute("alt", "profile-pic");
 
-        //create comments container right
-        const containerRight= document.createElement('div');
-        containerRight.classList.add('comments__container--right');
+    //create comments container right
+    const containerRight = document.createElement("div");
+    containerRight.classList.add("comments__container--right");
 
-        //create comments header
-        const commentsHeader= document.createElement('div');
-        commentsHeader.classList.add('comments__container--header');
+    //create comments header
+    const commentsHeader = document.createElement("div");
+    commentsHeader.classList.add("comments__container--header");
 
-        //create comments name
-        const commentsName= document.createElement('h4');
-        commentsName.classList.add('comments__container--name');
-        commentsName.innerText= newComments[i].name;
+    //create comments name
+    const commentsName = document.createElement("h4");
+    commentsName.classList.add("comments__container--name");
+    commentsName.innerText = newComments[i].name;
 
-        //create comments date
-        const commentsDate= document.createElement('h4');
-        commentsDate.classList.add('comments__container--date');
-        commentsDate.innerText= newComments[i].date;
+    //create comments date
+    const commentsDate = document.createElement("h4");
+    commentsDate.classList.add("comments__container--date");
+    commentsDate.innerText = newComments[i].date;
 
-        //create comments paragraph
-        const commentsPara = document.createElement('p');
-        commentsPara.classList.add('comments__container--comment');
-        commentsPara.innerText= newComments[i].comments;
+    //create comments paragraph
+    const commentsPara = document.createElement("p");
+    commentsPara.classList.add("comments__container--comment");
+    commentsPara.innerText = newComments[i].comments;
 
+    //Append elements together
+    commentsContainer.appendChild(containerLeft);
+    containerLeft.appendChild(containerImg);
+    commentsContainer.appendChild(containerRight);
+    containerRight.appendChild(commentsHeader);
+    commentsHeader.appendChild(commentsName);
+    commentsHeader.appendChild(commentsDate);
+    containerRight.appendChild(commentsPara);
 
-
-
-        //Append elements together
-        commentsContainer.appendChild(containerLeft);
-        containerLeft.appendChild(containerImg);
-        commentsContainer.appendChild(containerRight);
-        containerRight.appendChild(commentsHeader);
-        commentsHeader.appendChild(commentsName);
-        commentsHeader.appendChild(commentsDate);
-        containerRight.appendChild(commentsPara);
-
-      //glue everything together
-      commentsElem.appendChild(commentsContainer);
+    //glue everything together
+    commentsElem.appendChild(commentsContainer);
   }
 }
 
 displayComments();
 
+const form = document.getElementById("main-form");
 
-const form = document.getElementById('main-form');
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log("form submitted");
+  console.log(event.target.name.value);
+  console.log(event.target.message.value);
 
+  const addNewComment = {
+    name: event.target.name.value,
+    comments: event.target.message.value,
+    date: new Date(Date.now()).toLocaleDateString(),
+  };
 
-form.addEventListener("submit", function(event){ 
-    event.preventDefault();
-    console.log('form submitted');
-    console.log(event.target.name.value);
-    console.log(event.target.message.value);
-    
+  newComments.unshift(addNewComment);
 
+  form.reset();
 
-    const addNewComment= {
-      name: event.target.name.value,
-      comments: event.target.message.value,
-      date: new Date(Date.now()).toLocaleDateString(),
-    }
-
-    newComments.unshift(addNewComment);
-    
-    form.reset();
-
-    displayComments();
-
+  displayComments();
 });
-
-
-

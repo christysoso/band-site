@@ -33,7 +33,6 @@
       min-height: 32rem;
       max-height: 32rem;
     }
-
   }
 
   &__title {
@@ -101,9 +100,10 @@
   }
 
   &__img-container {
-    display: flex;
+    // display: flex;
+    @include flexColumn;
     align-items: center;
-    flex-direction: column;
+    // flex-direction: column;
     padding-bottom: 1rem;
     @include tablet {
       flex-direction: row;
@@ -163,136 +163,137 @@
   }
 }
 
-
-.comments{
-  margin:1rem;
-  @include desktop{
-    margin-bottom:3rem;
+.comments {
+  margin: 1rem;
+  @include desktop {
+    margin-bottom: 3rem;
   }
 
-  &__container{
-    display:flex;
+  &__container {
+    display: flex;
     border-bottom: solid 0.1rem $secondary-color-gry;
-    margin-top:1rem;
-    @include tablet{
+    margin-top: 1rem;
+    @include tablet {
       margin: 1rem 4rem 2rem 4rem;
     }
-    @include desktop{
+    @include desktop {
       margin: 1rem 18rem;
     }
-
   }
 
-  &__header{
-    @include tablet{
-    margin-left:2rem;
+  &__header {
+    @include tablet {
+      margin-left: 2rem;
+    }
+
+    @include desktop {
+      margin-left: 6rem;
+    }
   }
 
-  @include desktop{
-    margin-left:6rem;
-  }
-  }
-
-  &__container--pic{
-    width:2.5rem;
-    height:2.5rem;
+  &__container--pic {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
   }
 
-  &__container--name{
-    margin:0;
-    font-weight:600;
+  &__container--name {
+    margin: 0;
+    font-weight: 600;
   }
 
-  &__container--date{
-    margin:0;
+  &__container--date {
+    margin: 0;
     font-weight: 400;
     color: $grey-color;
   }
 
-  &__container--right{
+  &__container--right {
     margin-left: 1rem;
-    width:100%;
-
+    width: 100%;
   }
-  &__container--header{
-    display:flex;
-    justify-content:space-between;
-    font-size: 0.8rem;
-
-  }
-
-  &__container--text{
-    max-width: 100%;
-    min-height:5rem;
-    resize:none;
-  }
-
-  &__container--form{
-    display:flex;
-    flex-direction:column;
-  }
-
-  &__container--btn{
-    color: white;
-    background-color: $primary-color;
+  &__container--header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.4rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    cursor: pointer;
-    margin:1rem 0;
+    justify-content: space-between;
+    font-size: 0.8rem;
+  }
+
+  // &__container--text {
+  //   max-width: 100%;
+  //   min-height: 5rem;
+  //   resize: none;
+  // }
+
+  &__container--form {
+    // display: flex;
+    // flex-direction: column;
+    @include flexColumn;
+  }
+
+  &__container--btn {
+    // color: white;
+    // background-color: $primary-color;
+    // // display: flex;
+    // // justify-content: center;
+    @include centering;
+    // align-items: center;
+    // border-radius: 0.4rem;
+    // height: 3rem;
+    // font-size: 1.2rem;
+    // font-weight: 400;
+    // cursor: pointer;
+    @include btnStyle;
+    margin: 1rem 0;
 
     @include tablet {
       width: 12rem;
-      
     }
   }
 
-  &__container--btncontainer{
-    display: flex;
-    flex-direction: column;
+  &__container--btncontainer {
+    // display: flex;
+    // flex-direction: column;
+    @include flexColumn;
 
-    @include tablet{
-      align-items:flex-end;
+    @include tablet {
+      align-items: flex-end;
     }
-    
-}
-  & .comments-section{
-    width:100%;
+  }
+  & .comments-section {
+    width: 100%;
   }
 
-  &__container--label{
-    font-size:0.7rem;
-    color:$grey-color;
-    text-transform:uppercase;
+  &__container--label {
+    font-size: 0.7rem;
+    color: $grey-color;
+    text-transform: uppercase;
     font-weight: 600;
     margin: 1.5rem 0 0.5rem 0;
   }
 
-  &__container--text{
-    font-family: 'NewAvenir';
+  &__container--text {
+    @extend .comments__container--username;
+    max-width: 100%;
+    min-height: 5rem;
+    resize: none;
+    // font-family: "NewAvenir";
+    // padding: 0.5rem;
+    // background-color: $secondary-color-wht;
+    // border: solid 0.1rem $secondary-color-gry;
+    // border-radius: 0.4rem;
+  }
+
+  &__container--username {
+    
     padding: 0.5rem;
-    background-color:$secondary-color-wht;
+    font-family: "NewAvenir";
+    background-color: $secondary-color-wht;
     border: solid 0.1rem $secondary-color-gry;
-    border-radius:0.4rem;
+    border-radius: 0.4rem;
+    
   }
 
-
-  &__container--username{
-    padding:0.5rem;
-    font-family: 'NewAvenir';
-    background-color:$secondary-color-wht;
-    border: solid 0.1rem $secondary-color-gry;
-    border-radius:0.4rem;
+  & .name-label {
+    margin-top: 0rem;
   }
-
-  & .name-label{
-    margin-top:0rem;
-  }
-
-
 }

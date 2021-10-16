@@ -317,8 +317,8 @@ a {
 }
 .gallery__img-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
@@ -436,11 +436,6 @@ a {
   justify-content: space-between;
   font-size: 0.8rem;
 }
-.comments__container--text {
-  max-width: 100%;
-  min-height: 5rem;
-  resize: none;
-}
 .comments__container--form {
   display: flex;
   flex-direction: column;
@@ -483,13 +478,11 @@ a {
   margin: 1.5rem 0 0.5rem 0;
 }
 .comments__container--text {
-  font-family: "NewAvenir";
-  padding: 0.5rem;
-  background-color: #fafafa;
-  border: solid 0.1rem #e1e1e1;
-  border-radius: 0.4rem;
+  max-width: 100%;
+  min-height: 5rem;
+  resize: none;
 }
-.comments__container--username {
+.comments__container--username, .comments__container--text {
   padding: 0.5rem;
   font-family: "NewAvenir";
   background-color: #fafafa;

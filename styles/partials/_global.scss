@@ -18,8 +18,9 @@ body {
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  @include centering;
   font-size: 1.5rem;
 }
 
@@ -47,8 +48,9 @@ main {
 .primary-nav {
   &__links {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include centering;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -100,8 +102,9 @@ main {
   }
 
   &__img {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include centering;
     padding: 1rem;
   }
 }
@@ -193,55 +196,5 @@ main {
 a {
   text-decoration: none;
 }
-
-// .banner {
-//   background-size: cover;
-//   background-position: center;
-//   min-height: 12rem;
-//   max-height: 12rem;
-//   @include tablet {
-//     min-height: 32rem;
-//     max-height: 32rem;
-//   }
-
-//   @include desktop{
-//     min-height:50rem;
-//     max-height:50rem;
-//   }
-  
-
-//   &.bio-header-image{
-//     background-image: url("../../Assets/Images/hero-bio.jpg");
-//   }
-
-//   
-
-//   &__container {
-//     background-color: rgba(0, 0, 0, 0.5);
-//     min-height: 12rem;
-//     max-height: 12rem;
-//     display: flex;
-//     align-items: center;
-//     @include tablet {
-//       min-height: 32rem;
-//       max-height: 32rem;
-//     }
-//   }
-
-//   &__title {
-//     color: white;
-//     margin: 0;
-//     font-size: 1.5rem;
-//     font-weight: 600;
-//     padding-left: 1rem;
-//     @include tablet {
-//       font-size: 3.8rem;
-//       padding-left: 3rem;
-//     }
-//     @include desktop {
-//       padding-left: 10rem;
-//     }
-//   }
-//}
 
 
