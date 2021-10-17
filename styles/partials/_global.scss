@@ -18,8 +18,6 @@ body {
 }
 
 h1 {
-  // display: flex;
-  // justify-content: center;
   @include centering;
   font-size: 1.5rem;
 }
@@ -28,12 +26,11 @@ h3 {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 1.4rem 1rem 1rem 0;
+
   @include tablet {
-    @include tablet {
-      font-size: 2.5rem;
-      margin-left: 1rem;
-      margin-top: 2.5rem;
-    }
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -48,8 +45,6 @@ main {
 .primary-nav {
   &__links {
     list-style: none;
-    // display: flex;
-    // justify-content: center;
     @include centering;
     font-size: 1rem;
     margin: 0;
@@ -59,7 +54,6 @@ main {
   &__link {
     margin: 0;
     padding: 0 2rem 0.5rem 2rem;
-    width: 50%;
     text-align: center;
     color: $grey-color;
     @include tablet {
@@ -79,7 +73,7 @@ main {
     }
   }
   & a {
-    color: $grey-color;
+    width: 50%;
     &:hover {
       color: white;
     }
@@ -102,8 +96,6 @@ main {
   }
 
   &__img {
-    // display: flex;
-    // justify-content: center;
     @include centering;
     padding: 1rem;
   }
@@ -196,5 +188,3 @@ main {
 a {
   text-decoration: none;
 }
-
-

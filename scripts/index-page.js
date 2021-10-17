@@ -4,6 +4,7 @@ const newComments = [
     date: "02/17/2021",
     comments:
       "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
+    avatar: "./Assets/Images/placeholderavatar.png",
   },
 
   {
@@ -11,13 +12,14 @@ const newComments = [
     date: "01/01/2021",
     comments:
       "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
+    avatar: "./Assets/Images/placeholderavatar.png",
   },
-
   {
     name: "Miles Acosta",
     date: "12/20/2020",
     comments:
       "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
+    avatar: "./Assets/Images/placeholderavatar.png",
   },
 ];
 
@@ -38,7 +40,7 @@ function displayComments() {
     //create image connect to left container
     const containerImg = document.createElement("img");
     containerImg.classList.add("comments__container--pic");
-    containerImg.setAttribute("src", "./Assets/Images/Mohan-muruge.jpg");
+    containerImg.setAttribute("src", newComments[i].avatar);
     containerImg.setAttribute("alt", "profile-pic");
 
     //create comments container right
@@ -92,6 +94,7 @@ form.addEventListener("submit", function (event) {
     name: event.target.name.value,
     comments: event.target.message.value,
     date: new Date(Date.now()).toLocaleDateString(),
+    avatar: "./Assets/Images/Mohan-muruge.jpg",
   };
 
   newComments.unshift(addNewComment);

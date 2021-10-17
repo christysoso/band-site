@@ -100,10 +100,8 @@
   }
 
   &__img-container {
-    // display: flex;
     @include flexColumn;
     align-items: center;
-    // flex-direction: column;
     padding-bottom: 1rem;
     @include tablet {
       flex-direction: row;
@@ -218,30 +216,13 @@
     font-size: 0.8rem;
   }
 
-  // &__container--text {
-  //   max-width: 100%;
-  //   min-height: 5rem;
-  //   resize: none;
-  // }
-
   &__container--form {
-    // display: flex;
-    // flex-direction: column;
     @include flexColumn;
   }
 
   &__container--btn {
-    // color: white;
-    // background-color: $primary-color;
-    // // display: flex;
-    // // justify-content: center;
     @include centering;
-    // align-items: center;
-    // border-radius: 0.4rem;
-    // height: 3rem;
-    // font-size: 1.2rem;
-    // font-weight: 400;
-    // cursor: pointer;
+
     @include btnStyle;
     margin: 1rem 0;
 
@@ -251,8 +232,6 @@
   }
 
   &__container--btncontainer {
-    // display: flex;
-    // flex-direction: column;
     @include flexColumn;
 
     @include tablet {
@@ -276,21 +255,14 @@
     max-width: 100%;
     min-height: 5rem;
     resize: none;
-    // font-family: "NewAvenir";
-    // padding: 0.5rem;
-    // background-color: $secondary-color-wht;
-    // border: solid 0.1rem $secondary-color-gry;
-    // border-radius: 0.4rem;
   }
 
   &__container--username {
-    
     padding: 0.5rem;
     font-family: "NewAvenir";
     background-color: $secondary-color-wht;
     border: solid 0.1rem $secondary-color-gry;
     border-radius: 0.4rem;
-    
   }
 
   & .name-label {
