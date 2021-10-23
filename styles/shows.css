@@ -280,6 +280,7 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
+  border: none;
 }
 @media (min-width: 768px) {
   .show-info__btn {
@@ -425,4 +426,8 @@ a {
   .banner__music {
     width: 30rem;
   }
+}
+
+.ClickEvent {
+  background-color: #afafaf;
 }/*# sourceMappingURL=shows.css.map */

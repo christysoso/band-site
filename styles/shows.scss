@@ -2,6 +2,11 @@
 @use "../styles/partials/global" as *;
 @use "../styles/partials/mixins" as *;
 
+$primary-color: #323232;
+$grey-color: #afafaf;
+$secondary-color-gry: #e1e1e1;
+$secondary-color-wht: #fafafa;
+
 .shows {
   color: white;
   font-weight: 600;
@@ -103,6 +108,8 @@
   }
 }
 
+  
+
 .show-hover {
   &:hover {
     background-color: $secondary-color-wht;
@@ -199,3 +206,9 @@
     }
   }
 }
+
+.ClickEvent{
+  background-color: $grey-color;
+}
+
+
